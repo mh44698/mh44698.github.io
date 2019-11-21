@@ -1,0 +1,66 @@
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    text-align: center;
+    width: 100%;
+    }
+header{
+    font-size: 30pt;
+    color: white;
+    width: 100%;
+    height: 100px;
+    background: rgb(54, 54, 54);
+    margin-top: 20pt;
+    }
+    
+.holygrail-body{
+      flex: 1 0 auto;
+      display: flex;
+    }
+      
+.content{
+    flex: 1 0 auto;
+    color: white;
+     }
+img{
+    width: 670px;
+    height: 100%;
+}
+
+.nav{
+    width: 20%;
+    list-style: none;
+    text-align: left;
+    order: -1;
+    background: rgb(100, 100, 114);
+    margin: 0;
+    font-size: 23px;
+    color: white;
+    }
+
+li{
+    margin-top:20px;
+    }  
+
+.aside{
+    width: 0px;
+    background: lightgreen;
+     }
+    
+    
+.footer{
+    width: 100%;
+    height: 60px;
+    background: rgb(54, 54, 54);
+    color: white;
+    }
+    
+@media (max-width: 700px) {
+      .holygrail-body{
+         flex-direction: column;
+        
+        .nav, .aside{
+          width: 75%;
+        }}}
+
